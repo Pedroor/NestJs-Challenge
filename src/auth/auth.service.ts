@@ -44,6 +44,7 @@ export class AuthService {
         email: dto.email,
       },
     });
+
     // if user does not exist throw exception
     if (!user) throw new ForbiddenException('Credentials incorrect');
 
